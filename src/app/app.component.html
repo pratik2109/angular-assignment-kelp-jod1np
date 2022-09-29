@@ -1,0 +1,287 @@
+<div class="container-fluid bg-light">
+  <div class="row">
+    <div class="col-12 py-2 bg-white d-flex">
+      <mat-icon>arrow_back</mat-icon>
+      <h6 class="ps-2"><strong>CEO, Magma Fincorp, Kolkata</strong></h6>
+    </div>
+    <div class="col-11 m-auto">
+      <div class="row">
+        <div class="col">
+          <h6 class="mt-5">Offer Extended</h6>
+          <mat-card>
+            <div class="row align-items-center">
+              <div class="col">
+                <div mat-card-avatar></div>
+              </div>
+              <div class="col-2">
+                <div>Anil Kapoor</div>
+                <div class="text-light-gray">Director, Piramal Enterprises</div>
+                <div class="text-light-gray">Kolkatta</div>
+              </div>
+              <div class="col">
+                <div class="text-light-gray">Offer Extended on</div>
+                <div>21 Jul 2020</div>
+              </div>
+              <div class="col">
+                <div class="text-light-gray">Offer Accepted on</div>
+                <div>21 Jul 2020</div>
+              </div>
+              <div class="col">
+                <div class="text-light-gray">Date of Joining</div>
+                <div>1 Sep 2020</div>
+              </div>
+              <div class="col text-light-gray">
+                <div>Joining Status</div>
+                <div>
+                  <mat-icon>thumb_up</mat-icon>
+                </div>
+              </div>
+              <div class="col text-light-gray">
+                <div>B.V</div>
+                <div>
+                  <mat-icon>thumb_up</mat-icon>
+                </div>
+              </div>
+              <div class="col-3 text-light-gray d-flex">
+                <div>
+                  Metus etiam. Platea aliquet vulputate. Egestas. Lacinia
+                  ultrices. Pharetra. Quisque odio morbi sod tea aliquet
+                  vulputate.teame
+                </div>
+                <div class="align-self-center">
+                  <mat-icon>more_vert</mat-icon>
+                </div>
+              </div>
+            </div>
+          </mat-card>
+
+          <h6 class="mt-5">Prospects</h6>
+          <mat-card>
+            <div class="row text-center text-uppercase text-light-gray">
+              <div class="col-3">Candidate Details</div>
+              <div class="col-3">Interview schedule</div>
+              <div class="col-3">Reference Check</div>
+              <div class="col-3">comments</div>
+            </div>
+          </mat-card>
+
+          <div class="row text-center text-uppercase text-light-gray mb-3">
+            <div class="col-3"></div>
+            <div class="col-3"></div>
+            <div class="col-3 align-items-center d-flex justify-content-evenly">
+              <div>Leads</div>
+              <div>Captured</div>
+            </div>
+            <div class="col-3"></div>
+          </div>
+
+          <div
+            cdkDropList
+            class="example-list"
+            (cdkDropListDropped)="drop($event)"
+          >
+            <div *ngFor="let item of itemArray" cdkDrag>
+              <mat-card *ngIf="item == 1">
+                <div class="row align-items-center">
+                  <div class="col">
+                    <div mat-card-avatar></div>
+                  </div>
+                  <div class="col-2">
+                    <div>Aniket Joshi</div>
+                    <div class="text-light-gray">
+                      Director, Piramal Enterprises
+                    </div>
+                    <div class="text-light-gray">Kolkatta</div>
+                  </div>
+                  <div class="col text-light-gray text-center">
+                    <div>
+                      <mat-icon>thumb_up</mat-icon>
+                    </div>
+                    <div>Hire</div>
+                    <div>1 Jul 2018</div>
+                  </div>
+                  <div class="col text-light-gray text-center">
+                    <div>Awaiting Feedback</div>
+                  </div>
+                  <div class="col text-light-gray text-center">
+                    <div>
+                      <mat-icon>remove_circle_outline</mat-icon>
+                    </div>
+                    <div>Undecided</div>
+                    <div>1 Jul 2018</div>
+                  </div>
+                  <div class="col text-light-gray text-center">
+                    <div>
+                      <mat-icon>calendar_today</mat-icon>
+                    </div>
+                    <div>1 Jul 2018</div>
+                  </div>
+                  <div class="col">
+                    <div>7</div>
+                  </div>
+                  <div class="col">
+                    <div>3</div>
+                  </div>
+                  <div class="col-3 text-light-gray d-flex">
+                    <div>
+                      Metus etiam. Platea aliquet vulputate. Egestas. Lacinia
+                      ultrices. Pharetra. Quisque odio morbi sod tea aliquet
+                      vulputate.teamelatea aliquet vulputate. Egestas. Lacinia
+                      ultrices QuisqueQuisqueQuisqueQuklloojjdjuee
+                    </div>
+                    <div class="align-self-center">
+                      <mat-icon>more_vert</mat-icon>
+                    </div>
+                  </div>
+                </div>
+              </mat-card>
+
+              <mat-card *ngIf="item == 2">
+                <div class="row align-items-center">
+                  <div class="col">
+                    <div mat-card-avatar></div>
+                  </div>
+                  <div class="col-2">
+                    <div>Kunjan Kumar</div>
+                    <div class="text-light-gray">
+                      Director, Piramal Enterprises
+                    </div>
+                    <div class="text-light-gray">Kolkatta</div>
+                  </div>
+                  <div class="col text-light-gray text-center">
+                    <div>
+                      <mat-icon>thumb_up</mat-icon>
+                    </div>
+                    <div>Hire</div>
+                    <div>1 Jul 2018</div>
+                  </div>
+                  <div class="col text-light-gray text-center">
+                    <div>Awaiting Feedback</div>
+                  </div>
+                  <div class="col text-light-gray text-center">
+                    <div>
+                      <mat-icon>thumb_down</mat-icon>
+                    </div>
+                    <div>No Hire</div>
+                    <div>1 Jul 2018</div>
+                  </div>
+                  <div class="col text-light-gray">-</div>
+                  <div class="col">7</div>
+                  <div class="col">3</div>
+                  <div class="col-3 text-light-gray d-flex">
+                    <div>No Comments</div>
+                    <div class="align-self-center">
+                      <mat-icon>more_vert</mat-icon>
+                    </div>
+                  </div>
+                </div>
+              </mat-card>
+
+              <mat-card *ngIf="item == 3">
+                <div class="row align-items-center">
+                  <div class="col">
+                    <div mat-card-avatar></div>
+                  </div>
+                  <div class="col-2">
+                    <div>Kunal Kamra</div>
+                    <div class="text-light-gray">
+                      Director, Piramal Enterprises
+                    </div>
+                    <div class="text-light-gray">Kolkatta</div>
+                  </div>
+                  <div class="col text-light-gray text-center">
+                    <div>
+                      <mat-icon>thumb_up</mat-icon>
+                    </div>
+                    <div>Hire</div>
+                    <div>1 Jul 2018</div>
+                  </div>
+                  <div class="col text-light-gray text-danger text-center">
+                    <div>Awaiting Feedback</div>
+                  </div>
+                  <div class="col text-light-gray text-center">
+                    <div>
+                      <mat-icon>thumb_down</mat-icon>
+                    </div>
+                    <div>No Hire</div>
+                    <div>1 Jul 2018</div>
+                  </div>
+                  <div class="col text-light-gray text-center">
+                    <div>
+                      <mat-icon>calendar_today</mat-icon>
+                    </div>
+                    <div>1 Jul 2018</div>
+                  </div>
+                  <div class="col">7</div>
+                  <div class="col">3</div>
+                  <div class="col-3 text-light-gray d-flex">
+                    <div>
+                      Metus etiam. Platea aliquet vulputate. Egestas. Lacinia
+                      ultrices. Pharetra. Quisque odio morbi sod tea aliquet
+                      vulputate.teame
+                    </div>
+                    <div class="align-self-center">
+                      <mat-icon>more_vert</mat-icon>
+                    </div>
+                  </div>
+                </div>
+              </mat-card>
+            </div>
+          </div>
+
+          <h6 class="mt-5">Dropped</h6>
+          <mat-card>
+            <div class="row align-items-center">
+              <div class="col">
+                <div mat-card-avatar></div>
+              </div>
+              <div class="col-2">
+                <div>Shridhar Joshi</div>
+                <div class="text-light-gray">Director, Piramal Enterprises</div>
+                <div class="text-light-gray">Kolkatta</div>
+              </div>
+              <div class="col text-light-gray text-center">
+                <div>
+                  <mat-icon>thumb_down</mat-icon>
+                </div>
+                <div>No Hire</div>
+                <div>1 Jul 2018</div>
+              </div>
+              <div class="col text-light-gray text-center">
+                <div>
+                  <mat-icon>thumb_down</mat-icon>
+                </div>
+                <div>No Hire</div>
+                <div>1 Jul 2018</div>
+              </div>
+              <div class="col text-light-gray text-center">
+                <div>
+                  <mat-icon>calendar_today</mat-icon>
+                </div>
+                <div>1 Jul 2018</div>
+              </div>
+              <div class="col text-light-gray text-center">
+                <div>
+                  <mat-icon>calendar_today</mat-icon>
+                </div>
+                <div>1 Jul 2018</div>
+              </div>
+              <div class="col">4</div>
+              <div class="col">3</div>
+              <div class="col-3 text-light-gray d-flex">
+                <div>
+                  Metus etiam. Platea aliquet vulputate. Egestas. Lacinia
+                  ultrices. Pharetra. Quisque odio morbi sod tea aliquet
+                  vulputate.teame
+                </div>
+                <div class="align-self-center">
+                  <mat-icon>more_vert</mat-icon>
+                </div>
+              </div>
+            </div>
+          </mat-card>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

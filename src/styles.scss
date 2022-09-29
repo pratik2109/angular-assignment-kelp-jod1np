@@ -1,0 +1,35 @@
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+@import '~bootstrap/dist/css/bootstrap.css';
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-size: 14px;
+}
+
+.mat-card {
+  margin: 0 0 1rem;
+}
+
+.text-light-gray {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.mat-card-avatar {
+  height: 4rem !important;
+  width: 4rem !important;
+  margin: auto;
+  background-image: url('https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__480.png');
+  background-size: cover;
+}
+
+.carousel {
+  img {
+    height: 5rem;
+    width: 5rem;
+  }
+}
